@@ -4,7 +4,7 @@
 <head>
 <title>Is ATV out?</title>
 <meta charset="UTF-8">
-<link rel="icon" href=".\SClogo.jpeg" type="image/jpeg" />
+<link rel="icon" href=".\icon.png" type="image/png" />
 <style type="text/css">
 
 </style>
@@ -22,10 +22,10 @@
 		if(atv == "yes"){
 			var title = document.getElementById("title").innerHTML;
 			var url = document.getElementById("url").innerHTML;
-			document.write("<div id='container' style='text-align:center; color:lightblue; background-color:black; width:100vw; height:100vh; position:absolute; top:0px; left:0px; font-family:arial; font-weight:bold;'><div id='header'><p id='question' style='font-size:6vw; line-height:0.4em;'>IS ATV OUT?</p></div><div id='main'><p id='answer' style='font-size:18vw; line-height:0.2em; color:lime;'>YES IT IS!</p></div><div id='lower'><p id='counter' style='font-size:4vw; line-height:0.2em;'><a id='gibatv' href='"+url+"' style='text-decoration:none; background-color:darkblue; padding:0.5em; border:0.3vw solid darkblue; border-radius:1vw; padding-top:0.2em; color:#6060FF; box-shadow:#000000 0vw -0.5vw 1.5vw inset;' onmouseover='hoverButton()' onmouseout='outButton()'>༼ つ ◕_◕ ༽つ GIB ATV ༼ つ ◕_◕ ༽つ</a></p></div></div>");
+			document.write("<div id='container' style='text-align:center; color:lightblue; background-color:black; width:100vw; height:100vh; position:absolute; top:0px; left:0px; font-family:arial; font-weight:bold;'><div id='header'><p id='question' style='font-size:6vw; line-height:0em;'>IS ATV OUT?</p></div><div id='main'><p id='answer' style='font-size:18vw; line-height:0em; color:lime;'>YES IT IS!</p></div><div id='lower'><p id='counter' style='font-size:4vw; line-height:0em;'><a id='gibatv' href='"+url+"' style='text-decoration:none; background-color:darkblue; padding:0.5em; border:0.3vw solid darkblue; border-radius:1vw; padding-top:0.2em; color:#6060FF; box-shadow:#000000 0vw -0.5vw 1.5vw inset;' onmouseover='hoverButton()' onmouseout='outButton()'>༼ つ ◕_◕ ༽つ GIB ATV ༼ つ ◕_◕ ༽つ</a></p></div></div>");
 		}
 		if(atv == "no"){
-			document.write("<div id='container' style='text-align:center; color:lightblue; background-color:black; width:100vw; height:100vh; position:absolute; top:0px; left:0px; font-family:arial; font-weight:bold;'><div id='header'><p id='question' style='font-size:6vw; line-height:0.4em;'>IS ATV OUT?</p></div><div id='main'><p id='answer' style='font-size:18vw; line-height:0.2em; color:red;'>NOT YET.</p></div><div id='lower'><p id='counter' style='font-size:6vw; line-height:0.2em;'>CHECKING AGAIN IN 30</p></div></div>");
+			document.write("<div id='container' style='text-align:center; color:lightblue; background-color:black; width:100vw; height:100vh; position:absolute; top:0px; left:0px; font-family:arial; font-weight:bold;'><div id='header'><p id='question' style='font-size:6vw; line-height:0em;'>IS ATV OUT?</p></div><div id='main'><p id='answer' style='font-size:18vw; line-height:0em; color:red;'>NOT YET.</p></div><div id='lower'><p id='counter' style='font-size:6vw; line-height:0em;'>CHECKING AGAIN IN 30</p></div></div>");
 			timer = setInterval(updateCounter, 1000);
 		}
 	}
